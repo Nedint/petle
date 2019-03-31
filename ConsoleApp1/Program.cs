@@ -32,16 +32,26 @@ namespace ConsoleApp1
             }
 
             //pojedyncza gwiazdka w środku
-            //for (int i = 0; 1 < n / 2; i++)
-            
-                //Space();
-                //StarLn();
-            
+            for (int i = 0; i < n / 2; i++)
+             Space(); 
+                StarLn();
+
+            for (int i = 0; i < n / 2; i++)
+            {
+                for (int j = 0; j < i; j++)
+                Star();
+                for (int j = 0; j < n - j; j++)
+                    Space();
+                StarLn();
+
+            }
+
+
             //dolna połówka, symetrycznie do górnej
         }
         static void Main(string[] args)
         {
-            LiteraX(9);
+            LiteraX(12);
         }
     }
 
